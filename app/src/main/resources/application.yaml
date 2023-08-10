@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    password: postgres
+  jpa:
+    open-in-view: 'false'
+    properties:
+      hibernate:
+        type:
+          preferred_instant_jdbc_type: TIMESTAMP
+        query:
+          fail_on_pagination_over_collection_fetch: 'true'
+    hibernate:
+      ddl-auto: none
+springdoc:
+  swagger-ui:
+    enabled: 'false'
+    path: /docs/api

@@ -1,0 +1,8 @@
+plugins {
+    id 'org.github.ibaldini.arithmeticcalculator.java-library-conventions'
+}
+
+dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+}
